@@ -37,11 +37,11 @@ def activity_notifications(expenditure, d, n)
         activity_expense.upto(activity_remove_expense - 1) { |i| counter_activity_notifications[i] += 1 }
       end
     else
-      # Still collecting spending data
+      # Collecting Spending Data with activity_expense with argument counter_activity_notifications
       activity_expense.upto(200) { |i| counter_activity_notifications[i] += 1 }
     end
   end
-
+  # Calling activity notifications count
   activity_notifications_count
 end
 

@@ -9,18 +9,18 @@ def array_manipulation(n, queries)
   array_object = Array.new(n + 1, 0)
   queries
     .inject(array_object) { |array, (x, y, z)|
-  # Calling queries and aplying method .inject for Array object
-  # with a new argument array and x y z which every element is a number received in input.
-  array[x - 1] += z
-  array[y] -= z
-  array
-}
+    # Calling queries and aplying method .inject for Array object
+    # with a new argument array and x y z which every element is a number received in input.
+    array[x - 1] += z
+    array[y] -= z
+    array
+  }
     .inject([0, 0]) { |(max, sum), elem|
-  # Applying inject method for array with and pass as arguments a max, sum and element
-  sum += elem
-  max = sum if sum > max
-  [max, sum]
-}
+    # Applying inject method for array with and pass as arguments a max, sum and element
+    sum += elem
+    max = sum if sum > max
+    [max, sum]
+  }
     .at(0)
   # Calling index of array in method .at
 end

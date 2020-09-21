@@ -3,11 +3,9 @@
 require 'json'
 require 'stringio'
 
-# Complete the isValid function below.
 def valid?(s)
   counts = Hash.new(0)
   s.split('').each { |elem| counts[elem] += 1 }
-
   same_repetition_count = Hash.new(0)
   counts.each do |elem|
     same_repetition_count[elem[1]] += 1

@@ -5,8 +5,8 @@ class Router
   end
 
   def run
-    puts "Welcome to the Cookbook!"
-    puts "           --           "
+    puts 'Welcome to the Cookbook!'
+    puts '           --           '
 
     while @running
       display_tasks
@@ -27,7 +27,7 @@ class Router
     when 5 then @controller.mark_as_done
     when 6 then stop
     else
-      puts "Please press 1, 2, 3, 4, 5 or 6"
+      puts 'Please press 1, 2, 3, 4, 5 or 6'
     end
   end
 
@@ -36,14 +36,14 @@ class Router
   end
 
   def display_tasks
-    puts ""
-    puts "What do you want to do next?"
-    puts "1 - List all recipes"
-    puts "2 - Create a new recipe"
-    puts "3 - Destroy a recipe"
-    puts "4 - Import from Marmiton"
-    puts "5 - Mark recipe as done"
-    puts "6 - Stop and exit the program"
-    print "> "
+    puts ''
+    puts 'What do you want to do next?'
+    puts '1 - List all recipes'
+    puts '2 - Create a new recipe'
+    puts '3 - Destroy a recipe'
+    puts '4 - Import from Marmiton'
+    puts '5 - Mark recipe as done'
+    puts '6 - Stop and exit the program'
+    print '> '
   end
 end
